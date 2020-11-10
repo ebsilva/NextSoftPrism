@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>NextSoftPrism</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="7.2.0.1422" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\NextSoftPrism.Modules.MainModule\NextSoftPrism.Modules.MainModule.csproj" />
+    <ProjectReference Include="..\NextSoftPrism.Core\NextSoftPrism.Core.csproj" />
+    <ProjectReference Include="..\Services\NextSoftPrism.Services.Interfaces\NextSoftPrism.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\NextSoftPrism.Services\NextSoftPrism.Services.csproj" />
+  </ItemGroup>
+</Project>
