@@ -15,7 +15,10 @@ namespace NextSoftPrism
     {
         protected override Window CreateShell() => Container.Resolve<MainWindow>();
 
-        protected override void RegisterTypes(IContainerRegistry containerRegistry) => containerRegistry.RegisterSingleton<IMessageService, MessageService>();
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            containerRegistry.RegisterSingleton<IMessageService, MessageService>();
+        }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog) => moduleCatalog.AddModule<MainModule>();
     }
